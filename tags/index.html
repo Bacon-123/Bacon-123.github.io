@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="标签, 程序Bacon">
+    <meta name="keywords" content="标签, 白云~飘飘">
     <meta name="description" content="正通往IT领域大门的电脑小白">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>标签 | 程序Bacon</title>
+    <title>标签 | 白云~飘飘</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -41,7 +41,7 @@
                     
                     <img src="/medias/logo.png" class="logo-img" alt="LOGO">
                     
-                    <span class="logo-span">程序Bacon</span>
+                    <span class="logo-span">白云~飘飘</span>
                 </a>
             </div>
             
@@ -140,7 +140,7 @@
         
         <img src="/medias/logo.png" class="logo-img circle responsive-img">
         
-        <div class="logo-name">程序Bacon</div>
+        <div class="logo-name">白云~飘飘</div>
         <div class="logo-desc">
             
             正通往IT领域大门的电脑小白
@@ -311,13 +311,28 @@
         <div class="brand">
             <div class="title center-align">
                 
-                    subtitle
+                远行……小船
                 
             </div>
 
             <div class="description center-align">
                 
-                    正通往IT领域大门的电脑小白
+                <span id="subtitle"></span>
+                <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+                <script>
+                    var typed = new Typed("#subtitle", {
+                        strings: [
+                            '莫听穿林打叶声，何妨吟啸且徐行。',
+                            '竹杖芒鞋轻胜马，谁怕？一蓑烟雨任平生。',
+                            '料峭春风吹酒醒，微冷，山头斜照却相迎。',
+                            '回首向来萧瑟处，归去，也无风雨也无晴。'],
+                        startDelay: 300,
+                        typeSpeed: 100,
+                        loop: true,
+                        backSpeed: 50,
+                        showCursor: true
+                    });
+                </script>
                 
             </div>
         </div>
@@ -327,7 +342,7 @@
 
 <script>
     // 每天切换 banner 图.  Switch banner image every day.
-    var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
+    var bannerUrl = "/medias/banner/" + new Date().getMinutes() + '.jpg';
     $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
 </script>
 
