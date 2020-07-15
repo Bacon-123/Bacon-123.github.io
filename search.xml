@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>SQL配置</title>
+      <link href="/posts/22290.html"/>
+      <url>/posts/22290.html</url>
+      
+        <content type="html"><![CDATA[<h3 id="2、SQL配置"><a href="#2、SQL配置" class="headerlink" title="2、SQL配置"></a>2、SQL配置</h3><p>2.1 初始化MySQL</p><p>打开cmd，如果你的MySQL的bin文件存放位置不在C盘的话，就要装盘</p><p>指令：  cd /d D:\DataBase\MySQL\bin  回车进入</p><p>输入指令： mysqld –initialize –console 回车等待一段时间后，在代码的最后一行，是你的初始密码，一定要保存下来</p><p><img src="file:///C:%5CUsers%5CADMINI~1%5CAppData%5CLocal%5CTemp%5Cksohtml6812%5Cwps1.jpg" alt="img"> </p><p>初始密码：)!woq%Y1i(K&amp;</p><p>注意：</p><p>   如果没有显示密码的话</p><p>2.2 安装服务器，输入 mysqld –install</p><p><img src="file:///C:%5CUsers%5CADMINI~1%5CAppData%5CLocal%5CTemp%5Cksohtml6812%5Cwps2.jpg" alt="img"> </p><p>2.3 启动服务器， </p><p><img src="file:///C:%5CUsers%5CADMINI~1%5CAppData%5CLocal%5CTemp%5Cksohtml6812%5Cwps3.jpg" alt="img"> </p><p>2.4 检查</p><p>登录过后，输入自家的密码后，系统会显示你安装的版本信息</p><p><img src="file:///C:%5CUsers%5CADMINI~1%5CAppData%5CLocal%5CTemp%5Cksohtml6812%5Cwps4.jpg" alt="img"> </p><p>2.5 修改密码</p><p> 输入指令： alter user ‘root’@‘localhost’ identified by ‘root’; (绿色字体可以大写）</p><p> 最后一个root表示的是你修改的密码</p><p><img src="file:///C:%5CUsers%5CADMINI~1%5CAppData%5CLocal%5CTemp%5Cksohtml6812%5Cwps5.jpg" alt="img"> </p><p>2.6 对MySQL进行授权指令，分别输入</p><p>use mysql</p><p>Update user set host=’%’ where user=’root’;</p><p>GRANT  ALL  PRIVILEGES ON  <em>.</em>  TO  ‘root’@’%’;</p><p>GRANT  ALL  PRIVILEGES ON  <em>.</em>  TO  ‘root’@’%’;</p><p>FLUSH PRIVILEGES</p><p>注意：GRANT  ALL  PRIVILEGES ON  <em>.</em>  TO  ‘root’@’%’;第一次会报错，再输入一次就可以了</p><p>有些地方有一个空格的，在这里一个空格不明显看出来，所以我用了两个</p><p><img src="file:///C:%5CUsers%5CADMINI~1%5CAppData%5CLocal%5CTemp%5Cksohtml6812%5Cwps6.jpg" alt="img"> </p><p><img src="file:///C:%5CUsers%5CADMINI~1%5CAppData%5CLocal%5CTemp%5Cksohtml6812%5Cwps7.jpg" alt="img"> </p><p>2.7 修改native加密规则</p><p>输入 ALTER USER ‘root’@’%’ IDENTIFIED BY ‘root’ PASSWORD EXPIRE NEVER;</p><p><img src="file:///C:%5CUsers%5CADMINI~1%5CAppData%5CLocal%5CTemp%5Cksohtml6812%5Cwps8.jpg" alt="img"> </p><p>2.8 更新root</p><p>ALTER  USER  ‘root’@’%’ IDENTIFIED  WITH  mysql_native_password  BY  ‘root’;</p><p><img src="file:///C:%5CUsers%5CADMINI~1%5CAppData%5CLocal%5CTemp%5Cksohtml6812%5Cwps9.jpg" alt="img"> </p><p>2.9 退出数据库，再重进</p><p>输入 </p><p>exit</p><p> net stop mysql</p><p> net start mysql</p><p>就完成了MySQL的基本安装了</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 2 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hello World</title>
       <link href="/posts/16107.html"/>
       <url>/posts/16107.html</url>
