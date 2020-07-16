@@ -499,7 +499,7 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="SQL-Server（或MySQL）的安装（超详细）"><a href="#SQL-Server（或MySQL）的安装（超详细）" class="headerlink" title="SQL Server（或MySQL）的安装（超详细）"></a>SQL Server（或MySQL）的安装（超详细）</h2><h3 id="1、SQL安装"><a href="#1、SQL安装" class="headerlink" title="1、SQL安装"></a>1、SQL安装</h3><p>1.1 下载网址</p>
+                <h1 id="SQL-Server（或MySQL）的安装（超详细）"><a href="#SQL-Server（或MySQL）的安装（超详细）" class="headerlink" title="SQL Server（或MySQL）的安装（超详细）"></a>SQL Server（或MySQL）的安装（超详细）</h1><h2 id="1、SQL安装"><a href="#1、SQL安装" class="headerlink" title="1、SQL安装"></a>1、SQL安装</h2><p>1.1 下载网址</p>
 <p><a href="https://dev.mysql.com/downloads/file/?id=494993" target="_blank" rel="noopener">https://dev.mysql.com/downloads/file/?id=494993</a></p>
 <p>首先，去数据库的官网<a href="http://www.mysql.com/" target="_blank" rel="noopener">http://www.mysql.com</a>下载MySQL。</p>
 <p>进去之后时这样子的</p>
@@ -514,45 +514,69 @@
 <p><img src="https://raw.githubusercontent.com/Bacon-123/Myphono.github.io/master/img/20200716170502.jpg" alt="img"> </p>
 <p>1.6 在你安装的包mysql-8.0.20-winx64上新建一个my.ini,点击进去，输入代码后，保存退出</p>
 <p> 注意红色字体的路径，一定要是你存放的位置</p>
-<p>[mysqld]</p>
-<p># 设置3306端口</p>
-<p>port=3306</p>
-<p># 设置mysql的安装目录</p>
-<p>basedir=D:\DataBase\MySQL</p>
-<p># 设置mysql数据库的数据的存放目录</p>
-<p>datadir=D:\DataBase\MySQL\data </p>
-<p># 允许最大连接数</p>
-<p>max_connections=200</p>
-<p># 允许连接失败的次数。</p>
-<p>max_connect_errors=10</p>
-<p># 服务端使用的字符集默认为utf8mb4</p>
-<p>character-set-server=utf8mb4</p>
-<p># 创建新表时将使用的默认存储引擎</p>
-<p>default-storage-engine=INNODB</p>
-<p># 默认使用“mysql_native_password”插件认证</p>
-<p>#mysql_native_password</p>
-<p>default_authentication_plugin=mysql_native_password</p>
-<p>[mysql]</p>
-<p># 设置mysql客户端默认字符集</p>
-<p>default-character-set=utf8mb4</p>
-<p>[client]</p>
-<p># 设置mysql客户端连接服务端时默认使用的端口</p>
-<p>port=3306</p>
-<p>default-character-set=utf8mb4</p>
+<pre class=" language-js"><code class="language-js"><span class="token punctuation">[</span>mysqld<span class="token punctuation">]</span>
+
+# 设置<span class="token number">3306</span>端口
+
+port<span class="token operator">=</span><span class="token number">3306</span>
+
+# 设置mysql的安装目录
+
+basedir<span class="token operator">=</span>D<span class="token punctuation">:</span>\\DataBase\\MySQL
+
+# 设置mysql数据库的数据的存放目录
+
+datadir<span class="token operator">=</span>D<span class="token punctuation">:</span>\\DataBase\\MySQL\\data 
+
+# 允许最大连接数
+
+max_connections<span class="token operator">=</span><span class="token number">200</span>
+
+# 允许连接失败的次数。
+
+max_connect_errors<span class="token operator">=</span><span class="token number">10</span>
+
+# 服务端使用的字符集默认为utf8mb4
+
+character<span class="token operator">-</span><span class="token keyword">set</span><span class="token operator">-</span>server<span class="token operator">=</span>utf8mb4
+
+# 创建新表时将使用的默认存储引擎
+
+<span class="token keyword">default</span><span class="token operator">-</span>storage<span class="token operator">-</span>engine<span class="token operator">=</span>INNODB
+
+# 默认使用“mysql_native_password”插件认证
+
+#mysql_native_password
+
+default_authentication_plugin<span class="token operator">=</span>mysql_native_password
+
+<span class="token punctuation">[</span>mysql<span class="token punctuation">]</span>
+
+# 设置mysql客户端默认字符集
+
+<span class="token keyword">default</span><span class="token operator">-</span>character<span class="token operator">-</span><span class="token keyword">set</span><span class="token operator">=</span>utf8mb4
+
+<span class="token punctuation">[</span>client<span class="token punctuation">]</span>
+
+# 设置mysql客户端连接服务端时默认使用的端口
+
+port<span class="token operator">=</span><span class="token number">3306</span>
+
+<span class="token keyword">default</span><span class="token operator">-</span>character<span class="token operator">-</span><span class="token keyword">set</span><span class="token operator">=</span>utf8mb4</code></pre>
 <p>1.7 在该目录下新建一个MySQL（可以改变，建议不要用中文命名）</p>
 <p>将mysql-8.0.20-winx64里面的东西全部导入MySQL后，MySQL的文件会变成这样</p>
 <p> 你会发现多了个data。</p>
 <p><img src="https://raw.githubusercontent.com/Bacon-123/Myphono.github.io/master/img/20200716170503.jpg" alt="img"> </p>
 <p>1.8 把MySQL目录下的bin的目录地址放进环境变量里的系统变量的下面一个的path中</p>
 <p><img src="https://raw.githubusercontent.com/Bacon-123/Myphono.github.io/master/img/20200716170504.jpg" alt="img">)<img src="https://raw.githubusercontent.com/Bacon-123/Myphono.github.io/master/img/20200716170505.jpg" alt="img"> </p>
-<h3 id="2、SQL配置"><a href="#2、SQL配置" class="headerlink" title="\2、SQL配置**"></a><strong><em>\</em>2、SQL配置**</strong></h3><p>2.1 初始化MySQL</p>
+<h2 id="2、SQL配置"><a href="#2、SQL配置" class="headerlink" title="2、SQL配置"></a>2、SQL配置</h2><p>2.1 初始化MySQL</p>
 <p>打开cmd，如果你的MySQL的bin文件存放位置不在C盘的话，就要装盘</p>
 <p>指令：  cd /d D:\DataBase\MySQL\bin  回车进入</p>
 <p>输入指令： mysqld –initialize –console 回车等待一段时间后，在代码的最后一行，是你的初始密码，一定要保存下来</p>
 <p><img src="https://raw.githubusercontent.com/Bacon-123/Myphono.github.io/master/img/20200716170506.jpg" alt="img"> </p>
 <p>初始密码：)!woq%Y1i(K&amp;</p>
 <p>注意：</p>
-<p>   如果没有显示密码的话</p>
+<p>   如果没有显示密码的话,检查一下自己上一步是否有错误</p>
 <p>2.2 安装服务器，输入 mysqld –install</p>
 <p><img src="https://raw.githubusercontent.com/Bacon-123/Myphono.github.io/master/img/20200716170507.jpg" alt="img"> </p>
 <p>2.3 启动服务器， </p>
@@ -561,7 +585,7 @@
 <p>登录过后，输入自家的密码后，系统会显示你安装的版本信息</p>
 <p><img src="https://raw.githubusercontent.com/Bacon-123/Myphono.github.io/master/img/20200716170509.jpg" alt="img"> </p>
 <p>2.5 修改密码</p>
-<p> 输入指令： alter user ‘root’@‘localhost’ identified by ‘root’; (绿色字体可以大写）</p>
+<p> 输入指令： alter user ‘root’@‘localhost’ identified by ‘root’; </p>
 <p> 最后一个root表示的是你修改的密码</p>
 <p><img src="https://raw.githubusercontent.com/Bacon-123/Myphono.github.io/master/img/20200716170510.jpg" alt="img"> </p>
 <p>2.6 对MySQL进行授权指令，分别输入</p>
@@ -582,19 +606,20 @@
 <p><img src="https://raw.githubusercontent.com/Bacon-123/Myphono.github.io/master/img/20200716170514.jpg" alt="img"> </p>
 <p>2.9 退出数据库，再重进</p>
 <p>输入 </p>
-<p>exit</p>
-<p> net stop mysql</p>
-<p> net start mysql</p>
-<p>就完成了MySQL的基本安装了</p>
-<h2 id="五、-SQL-Server（或MySQL）中建库、建表及查询"><a href="#五、-SQL-Server（或MySQL）中建库、建表及查询" class="headerlink" title="\五、******SQL Server（或MySQL）中建库、建表及查询****"></a><strong><em>\</em>五、*****</strong>*SQL Server（或MySQL）中建库、建表及查询****</h2><p>对于MySQL的建库，建表可以使用管理员的权限进行操作，也可以利用第三方软件-<a href="https://www.navicat.com.cn/download/navicat-premium" target="_blank" rel="noopener">Navicat</a>，在这里，我是使用了<a href="https://www.navicat.com.cn/download/navicat-premium" target="_blank" rel="noopener">Navicat</a>来建立库，表等操作。</p>
-<h3 id="1、-连接本地MySQL"><a href="#1、-连接本地MySQL" class="headerlink" title="\1、 连接本地MySQL**"></a><strong><em>\</em>1、 连接本地MySQL**</strong></h3><p><img src="https://raw.githubusercontent.com/Bacon-123/Myphono.github.io/master/img/20200716170515.jpg" alt="img"> </p>
+<pre><code>exit
+
+ net stop mysql
+
+ net start mysql</code></pre><p>就完成了MySQL的基本安装了</p>
+<h2 id="3、SQL-Server（或MySQL）中建库、建表及查询"><a href="#3、SQL-Server（或MySQL）中建库、建表及查询" class="headerlink" title="3、SQL Server（或MySQL）中建库、建表及查询"></a>3、SQL Server（或MySQL）中建库、建表及查询</h2><p>对于MySQL的建库，建表可以使用管理员的权限进行操作，也可以利用第三方软件-<a href="https://www.navicat.com.cn/download/navicat-premium" target="_blank" rel="noopener">Navicat</a>，在这里，我是使用了<a href="https://www.navicat.com.cn/download/navicat-premium" target="_blank" rel="noopener">Navicat</a>来建立库，表等操作。</p>
+<h3 id="1、-连接本地MySQL"><a href="#1、-连接本地MySQL" class="headerlink" title="1、 连接本地MySQL"></a>1、 连接本地MySQL</h3><p><img src="https://raw.githubusercontent.com/Bacon-123/Myphono.github.io/master/img/20200716170515.jpg" alt="img"> </p>
 <p>然后填写自己的信息就可以完成连接了</p>
-<h3 id="2、建库"><a href="#2、建库" class="headerlink" title="\2、建库**"></a><strong><em>\</em>2、建库**</strong></h3><p>2.1 右键点击你在电脑上保存的数据库的名字，例如 我的是MySQL；然后点击新建数据库</p>
+<h3 id="2、建库"><a href="#2、建库" class="headerlink" title="2、建库"></a>2、建库</h3><p>2.1 右键点击你在电脑上保存的数据库的名字，例如 我的是MySQL；然后点击新建数据库</p>
 <p><img src="https://raw.githubusercontent.com/Bacon-123/Myphono.github.io/master/img/20200716170516.jpg" alt="img"> </p>
 <p>2.2 填入库名，字符集以及排序规则</p>
 <p> 字符集：utf8  排序规则：utf8_general_ci</p>
 <p><img src="https://raw.githubusercontent.com/Bacon-123/Myphono.github.io/master/img/20200716170517.jpg" alt="img"> </p>
-<h3 id="3、建表"><a href="#3、建表" class="headerlink" title="\3、建表**"></a><strong><em>\</em>3、建表**</strong></h3><p>3.1 在你新建的库名，双击，你会看到一系列功能，在表上右键，选择新建表</p>
+<h3 id="3、建表"><a href="#3、建表" class="headerlink" title="3、建表"></a>3、建表</h3><p>3.1 在你新建的库名，双击，你会看到一系列功能，在表上右键，选择新建表</p>
 <p><img src="https://raw.githubusercontent.com/Bacon-123/Myphono.github.io/master/img/20200716170518.jpg" alt="img"> </p>
 <p>3.2 分别填写你所需要的表格信息导航，如name，year，id，day，score等等</p>
 <p>注意：</p>
