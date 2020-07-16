@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="SQL配置, 白云~飘飘">
+    <meta name="keywords" content="搭建博客一些重要知识点, 白云~飘飘">
     <meta name="description" content="正通往IT领域大门的电脑小白">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>SQL配置 | 白云~飘飘</title>
+    <title>搭建博客一些重要知识点 | 白云~飘飘</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -330,12 +330,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/15.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">SQL配置</h1>
+                    <h1 class="description center-align post-title">搭建博客一些重要知识点</h1>
                 </div>
             </div>
         </div>
@@ -450,13 +450,9 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                    <div class="article-tag">
-                        
-                            <a href="/tags/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85/">
-                                <span class="chip bg-color">软件安装</span>
-                            </a>
-                        
-                    </div>
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
                     
                 </div>
                 <div class="col s5 right-align">
@@ -468,7 +464,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-07-15
+                    2020-07-16
                 </div>
                 
 
@@ -477,14 +473,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.2k
+                    52
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    4 分
+                    1 分
                 </div>
                 
 
@@ -499,145 +495,7 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="SQL-Server（或MySQL）的安装（超详细）"><a href="#SQL-Server（或MySQL）的安装（超详细）" class="headerlink" title="SQL Server（或MySQL）的安装（超详细）"></a>SQL Server（或MySQL）的安装（超详细）</h1><h2 id="1、SQL安装"><a href="#1、SQL安装" class="headerlink" title="1、SQL安装"></a>1、SQL安装</h2><p>1.1 下载网址</p>
-<p><a href="https://dev.mysql.com/downloads/file/?id=494993" target="_blank" rel="noopener">https://dev.mysql.com/downloads/file/?id=494993</a></p>
-<p>首先，去数据库的官网<a href="http://www.mysql.com/" target="_blank" rel="noopener">http://www.mysql.com</a>下载MySQL。</p>
-<p>进去之后时这样子的</p>
-<p><img src="https://raw.githubusercontent.com/Bacon-123/Myphono.github.io/master/img/20200716170458.jpg" alt="img"> </p>
-<p>1.2然后点击DOWNLOAD，进去之后，直接往下面滑动，直到看到这个东东，点击进去</p>
-<p><img src="https://raw.githubusercontent.com/Bacon-123/Myphono.github.io/master/img/20200716170459.jpg" alt="img"> </p>
-<p>1.3 找到MySQL Community Servery，点击进去</p>
-<p><img src="https://raw.githubusercontent.com/Bacon-123/Myphono.github.io/master/img/20200716170500.jpg" alt="img"> </p>
-<p>1.4 点击Other DownLoad的第一个安装软件</p>
-<p><img src="https://raw.githubusercontent.com/Bacon-123/Myphono.github.io/master/img/20200716170501.jpg" alt="img"> </p>
-<p>1.5 下载完毕后，在你电脑上内存较多的盘上，新建一个DataBase，将安装好的包放在里面</p>
-<p><img src="https://raw.githubusercontent.com/Bacon-123/Myphono.github.io/master/img/20200716170502.jpg" alt="img"> </p>
-<p>1.6 在你安装的包mysql-8.0.20-winx64上新建一个my.ini,点击进去，输入代码后，保存退出</p>
-<p> 注意红色字体的路径，一定要是你存放的位置</p>
-<pre class=" language-js"><code class="language-js"><span class="token punctuation">[</span>mysqld<span class="token punctuation">]</span>
-
-# 设置<span class="token number">3306</span>端口
-
-port<span class="token operator">=</span><span class="token number">3306</span>
-
-# 设置mysql的安装目录
-
-basedir<span class="token operator">=</span>D<span class="token punctuation">:</span>\\DataBase\\MySQL
-
-# 设置mysql数据库的数据的存放目录
-
-datadir<span class="token operator">=</span>D<span class="token punctuation">:</span>\\DataBase\\MySQL\\data 
-
-# 允许最大连接数
-
-max_connections<span class="token operator">=</span><span class="token number">200</span>
-
-# 允许连接失败的次数。
-
-max_connect_errors<span class="token operator">=</span><span class="token number">10</span>
-
-# 服务端使用的字符集默认为utf8mb4
-
-character<span class="token operator">-</span><span class="token keyword">set</span><span class="token operator">-</span>server<span class="token operator">=</span>utf8mb4
-
-# 创建新表时将使用的默认存储引擎
-
-<span class="token keyword">default</span><span class="token operator">-</span>storage<span class="token operator">-</span>engine<span class="token operator">=</span>INNODB
-
-# 默认使用“mysql_native_password”插件认证
-
-#mysql_native_password
-
-default_authentication_plugin<span class="token operator">=</span>mysql_native_password
-
-<span class="token punctuation">[</span>mysql<span class="token punctuation">]</span>
-
-# 设置mysql客户端默认字符集
-
-<span class="token keyword">default</span><span class="token operator">-</span>character<span class="token operator">-</span><span class="token keyword">set</span><span class="token operator">=</span>utf8mb4
-
-<span class="token punctuation">[</span>client<span class="token punctuation">]</span>
-
-# 设置mysql客户端连接服务端时默认使用的端口
-
-port<span class="token operator">=</span><span class="token number">3306</span>
-
-<span class="token keyword">default</span><span class="token operator">-</span>character<span class="token operator">-</span><span class="token keyword">set</span><span class="token operator">=</span>utf8mb4</code></pre>
-<p>1.7 在该目录下新建一个MySQL（可以改变，建议不要用中文命名）</p>
-<p>将mysql-8.0.20-winx64里面的东西全部导入MySQL后，MySQL的文件会变成这样</p>
-<p> 你会发现多了个data。</p>
-<p><img src="https://raw.githubusercontent.com/Bacon-123/Myphono.github.io/master/img/20200716170503.jpg" alt="img"> </p>
-<p>1.8 把MySQL目录下的bin的目录地址放进环境变量里的系统变量的下面一个的path中</p>
-<p><img src="https://raw.githubusercontent.com/Bacon-123/Myphono.github.io/master/img/20200716170504.jpg" alt="img">)<img src="https://raw.githubusercontent.com/Bacon-123/Myphono.github.io/master/img/20200716170505.jpg" alt="img"> </p>
-<h2 id="2、SQL配置"><a href="#2、SQL配置" class="headerlink" title="2、SQL配置"></a>2、SQL配置</h2><p>2.1 初始化MySQL</p>
-<p>打开cmd，如果你的MySQL的bin文件存放位置不在C盘的话，就要装盘</p>
-<p>指令：  cd /d D:\DataBase\MySQL\bin  回车进入</p>
-<p>输入指令： mysqld –initialize –console 回车等待一段时间后，在代码的最后一行，是你的初始密码，一定要保存下来</p>
-<p><img src="https://raw.githubusercontent.com/Bacon-123/Myphono.github.io/master/img/20200716170506.jpg" alt="img"> </p>
-<p>初始密码：)!woq%Y1i(K&amp;</p>
-<p>注意：</p>
-<p>   如果没有显示密码的话,检查一下自己上一步是否有错误</p>
-<p>2.2 安装服务器，输入 mysqld –install</p>
-<p><img src="https://raw.githubusercontent.com/Bacon-123/Myphono.github.io/master/img/20200716170507.jpg" alt="img"> </p>
-<p>2.3 启动服务器， </p>
-<p><img src="https://raw.githubusercontent.com/Bacon-123/Myphono.github.io/master/img/20200716170508.jpg" alt="img"> </p>
-<p>2.4 检查</p>
-<p>登录过后，输入自家的密码后，系统会显示你安装的版本信息</p>
-<p><img src="https://raw.githubusercontent.com/Bacon-123/Myphono.github.io/master/img/20200716170509.jpg" alt="img"> </p>
-<p>2.5 修改密码</p>
-<p> 输入指令： alter user ‘root’@‘localhost’ identified by ‘root’; </p>
-<p> 最后一个root表示的是你修改的密码</p>
-<p><img src="https://raw.githubusercontent.com/Bacon-123/Myphono.github.io/master/img/20200716170510.jpg" alt="img"> </p>
-<p>2.6 对MySQL进行授权指令，分别输入</p>
-<p>use mysql</p>
-<p>Update user set host=’%’ where user=’root’;</p>
-<p>GRANT  ALL  PRIVILEGES ON  <em>.</em>  TO  ‘root’@’%’;</p>
-<p>GRANT  ALL  PRIVILEGES ON  <em>.</em>  TO  ‘root’@’%’;</p>
-<p>FLUSH PRIVILEGES</p>
-<p>注意：GRANT  ALL  PRIVILEGES ON  <em>.</em>  TO  ‘root’@’%’;第一次会报错，再输入一次就可以了</p>
-<p>有些地方有一个空格的，在这里一个空格不明显看出来，所以我用了两个</p>
-<p><img src="https://raw.githubusercontent.com/Bacon-123/Myphono.github.io/master/img/20200716170511.jpg" alt="img"> </p>
-<p><img src="https://raw.githubusercontent.com/Bacon-123/Myphono.github.io/master/img/20200716170512.jpg" alt="img"> </p>
-<p>2.7 修改native加密规则</p>
-<p>输入 ALTER USER ‘root’@’%’ IDENTIFIED BY ‘root’ PASSWORD EXPIRE NEVER;</p>
-<p><img src="https://raw.githubusercontent.com/Bacon-123/Myphono.github.io/master/img/20200716170513.jpg" alt="img"> </p>
-<p>2.8 更新root</p>
-<p>ALTER  USER  ‘root’@’%’ IDENTIFIED  WITH  mysql_native_password  BY  ‘root’;</p>
-<p><img src="https://raw.githubusercontent.com/Bacon-123/Myphono.github.io/master/img/20200716170514.jpg" alt="img"> </p>
-<p>2.9 退出数据库，再重进</p>
-<p>输入 </p>
-<pre><code>exit
-
- net stop mysql
-
- net start mysql</code></pre><p>就完成了MySQL的基本安装了</p>
-<h2 id="3、SQL-Server（或MySQL）中建库、建表及查询"><a href="#3、SQL-Server（或MySQL）中建库、建表及查询" class="headerlink" title="3、SQL Server（或MySQL）中建库、建表及查询"></a>3、SQL Server（或MySQL）中建库、建表及查询</h2><p>对于MySQL的建库，建表可以使用管理员的权限进行操作，也可以利用第三方软件-<a href="https://www.navicat.com.cn/download/navicat-premium" target="_blank" rel="noopener">Navicat</a>，在这里，我是使用了<a href="https://www.navicat.com.cn/download/navicat-premium" target="_blank" rel="noopener">Navicat</a>来建立库，表等操作。</p>
-<h3 id="1、-连接本地MySQL"><a href="#1、-连接本地MySQL" class="headerlink" title="1、 连接本地MySQL"></a>1、 连接本地MySQL</h3><p><img src="https://raw.githubusercontent.com/Bacon-123/Myphono.github.io/master/img/20200716170515.jpg" alt="img"> </p>
-<p>然后填写自己的信息就可以完成连接了</p>
-<h3 id="2、建库"><a href="#2、建库" class="headerlink" title="2、建库"></a>2、建库</h3><p>2.1 右键点击你在电脑上保存的数据库的名字，例如 我的是MySQL；然后点击新建数据库</p>
-<p><img src="https://raw.githubusercontent.com/Bacon-123/Myphono.github.io/master/img/20200716170516.jpg" alt="img"> </p>
-<p>2.2 填入库名，字符集以及排序规则</p>
-<p> 字符集：utf8  排序规则：utf8_general_ci</p>
-<p><img src="https://raw.githubusercontent.com/Bacon-123/Myphono.github.io/master/img/20200716170517.jpg" alt="img"> </p>
-<h3 id="3、建表"><a href="#3、建表" class="headerlink" title="3、建表"></a>3、建表</h3><p>3.1 在你新建的库名，双击，你会看到一系列功能，在表上右键，选择新建表</p>
-<p><img src="https://raw.githubusercontent.com/Bacon-123/Myphono.github.io/master/img/20200716170518.jpg" alt="img"> </p>
-<p>3.2 分别填写你所需要的表格信息导航，如name，year，id，day，score等等</p>
-<p>注意：</p>
-<p>  填写时，记得写注释。</p>
-<p>  填写完，按Ctrl+s保存表格，并填写表格名字</p>
-<p><img src="https://raw.githubusercontent.com/Bacon-123/Myphono.github.io/master/img/20200716170519.jpg" alt="img">)<img src="https://raw.githubusercontent.com/Bacon-123/Myphono.github.io/master/img/20200716170520.jpg" alt="img"> </p>
-<p>3.3 填写表格的信息</p>
-<p> 双击表格，你就可以看到你新建的表格名字，然后填入对应的信息后，Ctrl+s保存</p>
-<p><img src="https://raw.githubusercontent.com/Bacon-123/Myphono.github.io/master/img/20200716170521.jpg" alt="img">)<img src="https://raw.githubusercontent.com/Bacon-123/Myphono.github.io/master/img/20200716170522.jpg" alt="img"> </p>
-<p>4、查询</p>
-<p>4.1 点击查询，然后点击新建查询</p>
-<p><img src="https://raw.githubusercontent.com/Bacon-123/Myphono.github.io/master/img/20200716170523.jpg" alt="img"> </p>
-<p>4.2 使用SQL指令进行查询表格信息</p>
-<p>SELECT * from 表格名字 where 查询的关键字</p>
-<p>例如</p>
-<p>SELECT * from student where id=08</p>
-<p><img src="https://raw.githubusercontent.com/Bacon-123/Myphono.github.io/master/img/20200716170524.jpg" alt="img"> </p>
-<script>
+                <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -680,7 +538,7 @@ port<span class="token operator">=</span><span class="token number">3306</span>
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://Bacon-123.github.io/posts/22290.html">https://Bacon-123.github.io/posts/22290.html</a>
+                    <a href="https://Bacon-123.github.io/posts/24137.html">https://Bacon-123.github.io/posts/24137.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -717,11 +575,7 @@ port<span class="token operator">=</span><span class="token number">3306</span>
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            
-                                <a href="/tags/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85/">
-                                    <span class="chip bg-color">软件安装</span>
-                                </a>
-                            
+                            <span class="chip bg-color">无标签</span>
                         </div>
                     
                 </div>
@@ -887,9 +741,51 @@ port<span class="token operator">=</span><span class="token number">3306</span>
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/posts/24137.html">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="搭建博客一些重要知识点">
+                        
+                        <span class="card-title">搭建博客一些重要知识点</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-16
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            吴培林
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/posts/44942.html">
                     <div class="card-image">
@@ -908,9 +804,9 @@ port<span class="token operator">=</span><span class="token number">3306</span>
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-07-16
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-16
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -926,43 +822,6 @@ port<span class="token operator">=</span><span class="token number">3306</span>
                         <span class="chip bg-color">个人搭建博客</span>
                     </a>
                     
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/posts/16107.html">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
-                        
-                        <span class="card-title">Hello World</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-08
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            吴培林
-                            
-                        </span>
-                    </div>
                 </div>
                 
             </div>
