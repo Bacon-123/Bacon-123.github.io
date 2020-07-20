@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>bacon-blog.cn/about/index.html</loc>
+    
+    <lastmod>2020-07-20T07:25:12.139Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>bacon-blog.cn/posts/44942.html</loc>
     
     <lastmod>2020-07-18T01:29:42.574Z</lastmod>
@@ -47,13 +54,6 @@
     <loc>bacon-blog.cn/contact/index.html</loc>
     
     <lastmod>2020-07-08T01:45:39.232Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>bacon-blog.cn/about/index.html</loc>
-    
-    <lastmod>2020-07-08T01:44:49.195Z</lastmod>
     
   </url>
   
